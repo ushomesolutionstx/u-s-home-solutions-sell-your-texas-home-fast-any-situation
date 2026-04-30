@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ushomesolutionstx.github.io/u-s-home-solutions-sell-your-texas-home-fast-any-situation/sitemap.xml
