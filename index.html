@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- BASE:START (managed by Coding Agent — do not edit) -->
+<base href="/u-s-home-solutions-sell-your-texas-home-fast-any-situation/">
+<!-- BASE:END -->
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  
+
+<!-- SEO Meta Tags -->
+<title>Sell My House Fast in Texas — U.S. Home Solutions</title>
+<meta name="description" content="We buy Texas homes in any condition, any situation. No agents, no fees, no repairs. Get a free cash offer from a local investor — no pressure, ever." />
+<meta name="keywords" content="sell my house fast Texas" />
+<meta property="og:title" content="Sell My House Fast in Texas — U.S. Home Solutions" />
+<meta property="og:description" content="We buy Texas homes in any condition, any situation. No agents, no fees, no repairs. Get a free cash offer from a local investor — no pressure, ever." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Sell My House Fast in Texas — U.S. Home Solutions" />
+<meta name="twitter:description" content="We buy Texas homes in any condition, any situation. No agents, no fees, no repairs. Get a free cash offer from a local investor — no pressure, ever." />
+<!-- End SEO Meta Tags -->
+
+<script data-field-replace>
+(function(){
+  var params=new URLSearchParams(window.location.search);
+  var fields={};
+  var paramMap={
+    'first_name':'firstName','last_name':'lastName','full_name':'fullName',
+    'email':'email','phone':'phone','company':'company',
+    'city':'city','state':'state','country':'country'
+  };
+  var skipTags={'SCRIPT':1,'STYLE':1,'NOSCRIPT':1,'TEXTAREA':1,'CODE':1,'PRE':1};
+  var hasUrlFields=false;
+  for(var p in paramMap){
+    var v=params.get(p);
+    if(v){fields[paramMap[p]]=v;hasUrlFields=true;}
+  }
+  var contactId=params.get('contact_id');
+  function esc(s){
+    if(!s)return s;
+    var d=document.createElement('div');
+    d.appendChild(document.createTextNode(s));
+    return d.innerHTML;
+  }
+  function doReplace(data){
+    var r={};
+    r['{{full_name}}']=esc(((data.firstName||'')+' '+(data.lastName||'')).trim()||((data.fullName||data.name)||''));
+    r['{{first_name}}']=esc(data.firstName||(data.name?data.name.split(' ')[0]:'')||'');
+    r['{{last_name}}']=esc(data.lastName||(data.name&&data.name.indexOf(' ')>-1?data.name.substring(data.name.indexOf(' ')+1):'')||'');
+    r['{{email}}']=esc(data.email||'');
+    r['{{phone}}']=esc(data.phone||'');
+    r['{{company}}']=esc(data.company||'');
+    r['{{city}}']=esc(data.city||'');
+    r['{{state}}']=esc(data.state||'');
+    r['{{country}}']=esc(data.country||'');
+    r['{{date}}']=new Date().toLocaleDateString();
+    r['{{time}}']=new Date().toLocaleTimeString();
+    r['{{location}}']=[data.city,data.state,data.country].filter(Boolean).join(', ');
+    r['{{tracking_id}}']=esc(data.trackingId||'');
+    r['{{lastClickedProduct}}']=esc(data.lastClickedProduct||'');
+    r['{{lastProductClickDate}}']=esc(data.lastProductClickDate||'');
+    r['{{lastClickedProductPrice}}']=esc(data.lastClickedProductPrice||'');
+    r['{{lastClickedProductURL}}']=esc(data.lastClickedProductURL||'');
+    r['{{productsClickedCount}}']=esc(data.productsClickedCount||'0');
+    r['{{ip_address}}']=esc(data.ipAddress||'');
+    r['{{ip}}']=esc(data.ipAddress||'');
+    if(data.customFields){
+      for(var k in data.customFields){
+        r['{{'+k+'}}']=esc(String(data.customFields[k]||''));
+      }
+    }
+    params.forEach(function(v,k){
+      if(!paramMap[k]&&k!=='contact_id'&&k!=='page_id'&&k.indexOf('utm_')!==0){
+        r['{{'+k+'}}']=esc(v);
+      }
+    });
+    var hasValues=false;
+    for(var key in r){if(r[key]){hasValues=true;break;}}
+    if(!hasValues)return;
+    var walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{
+      acceptNode:function(n){
+        var p=n.parentNode;
+        if(p&&skipTags[p.nodeName])return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    var node;
+    while(node=walker.nextNode()){
+      var txt=node.nodeValue;
+      if(txt&&txt.indexOf('{{')>-1){
+        var changed=txt;
+        for(var ph in r){
+          if(r[ph]&&changed.indexOf(ph)>-1){
+            changed=changed.split(ph).join(r[ph]);
+          }
+        }
+        if(changed!==txt)node.nodeValue=changed;
+      }
+    }
+    var attrs=['value','placeholder','content','alt','title'];
+    attrs.forEach(function(attr){
+      var els=document.querySelectorAll('['+attr+'*="{{"]');
+      for(var i=0;i<els.length;i++){
+        var tag=els[i].tagName;
+        if(skipTags[tag])continue;
+        var val=els[i].getAttribute(attr);
+        if(val){
+          var nv=val;
+          for(var ph in r){
+            if(r[ph]&&nv.indexOf(ph)>-1){
+              nv=nv.split(ph).join(r[ph]);
+            }
+          }
+          if(nv!==val)els[i].setAttribute(attr,nv);
+        }
+      }
+    });
+  }
+  function run(){
+    if(contactId){
+      var xhr=new XMLHttpRequest();
+      xhr.open('GET','https://paymegpt.com/api/landing/context/'+encodeURIComponent(contactId)+'?page_id=3141');
+      xhr.onload=function(){
+        if(xhr.status===200){
+          try{
+            var resp=JSON.parse(xhr.responseText);
+            if(resp.success&&resp.contact){
+              var merged=resp.contact;
+              for(var k in fields){merged[k]=fields[k];}
+              doReplace(merged);
+              return;
+            }
+          }catch(e){}
+        }
+        if(hasUrlFields)doReplace(fields);
+      };
+      xhr.onerror=function(){if(hasUrlFields)doReplace(fields);};
+      xhr.send();
+    }else if(hasUrlFields){
+      doReplace(fields);
+    }
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}
+  else{run();}
+})();
+</script>
+<script data-payment>
+(function(){
+  var slug='ArLk43aR';
+  var apiBase='https://paymegpt.com';
+  function findEmail(){
+    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
+    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
+    return '';
+  }
+  function findName(){
+    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
+    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
+    return '';
+  }
+  var __realProcessPayment=function(a,b,c,d,e){
+    var amountCents,email,productName,productDescription,customerName,quantity;
+    if(a&&typeof a==='object'){
+      amountCents=a.amountCents;email=a.email;productName=a.productName;
+      productDescription=a.productDescription||'';customerName=a.name||'';quantity=a.quantity||1;
+    }else{
+      amountCents=typeof a==='number'?a:0;productName=typeof b==='string'?b:'';
+      productDescription=typeof c==='string'?c:'';email='';customerName='';quantity=1;
+    }
+    if(!email)email=findEmail();
+    if(!customerName)customerName=findName();
+    if(!productName){alert('Product name is required.');return Promise.reject('no_product_name');}
+    if(!amountCents||amountCents<100){alert('Amount must be at least $1.00');return Promise.reject('invalid_amount');}
+    if(!email){alert('Please enter your email address.');return Promise.reject('no_email');}
+    var successBase=window.location.href.split('?')[0];
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/payment/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({email:email,name:customerName,amountCents:amountCents,productName:productName,productDescription:productDescription,quantity:quantity,successUrl:successBase+'?payment=success&product='+encodeURIComponent(productName)+'&session_id={CHECKOUT_SESSION_ID}',cancelUrl:successBase+'?payment=cancelled'})
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||'Failed to process payment');throw new Error(d.error);}
+    });
+  };
+  Object.defineProperty(window,'__processPayment',{value:__realProcessPayment,writable:false,configurable:false});
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('payment')==='success'){
+      var pName=urlParams.get('product')||'your item';
+      var overlay=document.createElement('div');overlay.id='payment-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Payment Successful!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">Thank you for purchasing '+pName.replace(/</g,'&lt;').replace(/>/g,'&gt;')+'.</p><button onclick="document.getElementById(\'payment-success-overlay\').remove();window.history.replaceState({},\'\',window.location.pathname);" style="padding:12px 32px;font-size:16px;font-weight:600;background:#16a34a;color:white;border:none;border-radius:8px;cursor:pointer;">Continue</button></div>';
+      document.body.appendChild(overlay);
+    }
+  });
+})();
+</script>  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ============================================================================ -->
+  <!-- HERO SECTION: Main landing area with headline, subtext, and primary CTA     -->
+  <!-- Features: Centered content, responsive typography, scroll-to-form button    -->
+  <!-- Mobile Padding: Safe spacing prevents text from touching viewport edges     -->
+  <!-- ============================================================================ -->
+  <section data-section="hero" class="hero-section">
+    <h1>Sell Your Texas Home Fast — Any Condition, Any Situation.</h1>
+    <p class="hero-subheadline">No agents. No repairs. No fees. Just a fair cash offer and a closing date that works for you.</p>
+    <a href="#form-section" class="btn btn-full-mobile">Get My Free Cash Offer</a>
+  </section>
+
+  <section class="empathy-section">
+    <div class="empathy-grid">
+      <div class="empathy-card">
+        <span class="empathy-icon">🏡</span>
+        <h3>Austin-Based & Texas-Focused</h3>
+        <p>We're a local Texas investment company, not a national call center. When you reach out, you're talking to someone who knows your market and your situation.</p>
+      </div>
+      <div class="empathy-card">
+        <span class="empathy-icon">💰</span>
+        <h3>What We Offer Is What You Keep</h3>
+        <p>No agent commissions. No closing costs. No repair bills. Our cash offer is your take-home number.</p>
+      </div>
+      <div class="empathy-card">
+        <span class="empathy-icon">💬</span>
+        <h3>We'll Always Be Straight With You</h3>
+        <p>If selling to us isn't your best move, we'll tell you — and point you toward options that are.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="options-section">
+    <div class="options-header">
+      <h2>We Work With Texas Homeowners in All Kinds of Situations</h2>
+      <p class="options-subtext">You don't have to be in crisis to work with us. We help homeowners who simply want a faster, simpler way to sell — no listings, no showings, no waiting.</p>
+    </div>
+    <div class="options-grid">
+      <div class="option-card">
+        <h3>🏚️ Facing foreclosure or missed mortgage payments</h3>
+      </div>
+      <div class="option-card">
+        <h3>📋 Going through divorce or probate</h3>
+      </div>
+      <div class="option-card">
+        <h3>👴 Inherited a property you don't want to keep</h3>
+      </div>
+      <div class="option-card">
+        <h3>🏃 Relocating and need to sell on a tight timeline</h3>
+      </div>
+      <div class="option-card">
+        <h3>💸 Behind on property taxes or dealing with liens</h3>
+      </div>
+      <div class="option-card">
+        <h3>🔧 Property needs major repairs you can't or don't want to handle</h3>
+      </div>
+      <div class="option-card">
+        <h3>🏦 Want to skip the realtor and sell directly for cash</h3>
+      </div>
+      <div class="option-card">
+        <h3>😓 Just need a clean exit — fast</h3>
+      </div>
+    </div>
+    <div style="margin-top: 48px; text-align: center;">
+      <p style="font-size: 16px; color: var(--text-muted); line-height: 1.6; max-width: 700px; margin: 0 auto 32px;">Whatever your situation, the first step is a free, no-pressure conversation. We'll listen, walk you through your options, and give you a straight answer.</p>
+      <a href="#form-section" class="btn btn-full-mobile">Talk to Us — It's Free</a>
+    </div>
+  </section>
+
+  
+
+  <!-- ============================================================================ -->
+  <!-- OPTIONS SECTION: 5 paths to address foreclosure with orange left borders    -->
+  <!-- Features: Card-based layout, hover effects, mobile-responsive grid          -->
+  <!-- Purpose: Educate visitor on all available paths, build credibility          -->
+  <!-- ============================================================================ -->
+  <section data-section="options" class="options-section">
+    <div class="options-header">
+      <h2>Before You Do Anything — Know Your Options</h2>
+      <p class="options-subtext">Most homeowners facing foreclosure don't know they have choices. Here are the 5 paths available to you:</p>
+    </div>
+
+    <div class="options-grid">
+      <div class="option-card">
+        <h3>Reinstate the Loan</h3>
+        <p>Catch up on missed payments before the auction date. This keeps you in the home. We can walk you through whether this is realistic for your situation.</p>
+      </div>
+
+      <div class="option-card">
+        <h3>Loan Modification</h3>
+        <p>Work with your lender to restructure your payments. Takes time — and lenders don't always say yes — but worth exploring.</p>
+      </div>
+
+      <div class="option-card">
+        <h3>Sell Fast to an Investor</h3>
+        <p>Get a cash offer, close on your timeline, walk away without repairs or agent fees. This is what we do — and we'll be upfront if it's not your best option.</p>
+      </div>
+
+      <div class="option-card">
+        <h3>List with an Agent</h3>
+        <p>If you have enough equity and time before auction, a traditional sale may net you more. We'll tell you honestly if this fits your situation.</p>
+      </div>
+
+      <div class="option-card">
+        <h3>Let It Go</h3>
+        <p>Sometimes foreclosure or a deed-in-lieu is the cleanest exit. We'll explain what that means for your credit and your future.</p>
+      </div>
+
+      <div class="option-card">
+        <h3>Next Steps</h3>
+        <p>Whatever path makes sense for you, the first step is a conversation with someone who understands Texas foreclosure law and your specific situation. That's what the call below is for.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================================ -->
+  <!-- FORM SECTION: Lead capture form with simple, non-aggressive styling         -->
+  <!-- Features: Required fields (name, phone, city, situation), success message   -->
+  <!-- Purpose: Collect contact info for follow-up consultation call               -->
+  <!-- Mobile Padding: Form inputs full-width, button full-width on mobile         -->
+  <!-- ============================================================================ -->
+  <section data-section="form-section" id="form-section" class="form-section">
+    <div class="form-container">
+      <div class="form-header">
+        <h2>Let's Look at Your Options Together</h2>
+        <p class="form-subtext">Free call. No obligation. We'll give you a straight answer — even if that answer is "don't sell to us."</p>
+      </div>
+
+      <form id="lead-form" class="lead-form" onsubmit="handleFormSubmit(event)">
+        <div class="form-error" id="form-error"></div>
+
+        <div class="form-group">
+          <label for="first-name">First Name</label>
+          <input 
+            type="text" 
+            id="first-name" 
+            name="first_name" 
+            placeholder="Your first name" 
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input 
+            type="tel" 
+            id="phone" 
+            name="phone" 
+            placeholder="(555) 000-0000" 
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="city">City</label>
+          <input 
+            type="text" 
+            id="city" 
+            name="city" 
+            placeholder="Your city in Texas" 
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="situation">What's your situation?</label>
+          <select id="situation" name="situation" required>
+            <option value="">Select your situation...</option>
+            <option value="missed-payments">I've missed payments and need help fast</option>
+            <option value="auction-date">I have an auction/foreclosure date coming up</option>
+            <option value="no-realtor">I want to sell without using a realtor</option>
+            <option value="inherited">I inherited a property and want to sell</option>
+            <option value="divorce">I'm going through a divorce and need to move fast</option>
+            <option value="landlord">I'm a landlord ready to sell</option>
+            <option value="relocate">I need to relocate quickly</option>
+            <option value="other">I need to sell — other reason</option>
+            <option value="unsure">I'm not sure, I just need to talk to someone</option>
+          </select>
+        </div>
+
+        <div class="form-submit-wrapper">
+          <button type="submit" class="btn btn-full-mobile btn-gold" id="form-submit-btn">Get My Free Cash Offer</button>
+        </div>
+      </form>
+
+      <div class="form-success" id="form-success">
+        <h3>Thank You!</h3>
+        <p>We've received your information. Someone from our team will call you shortly to discuss your options.</p>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- ============================================================================ -->
+  <!-- FOOTER SECTION: Legal disclaimer and copyright information                  -->
+  <!-- Features: Transparent business disclosure, company info, year auto-update   -->
+  <!-- Purpose: Build trust through legal clarity and transparency                 -->
+  <!-- ============================================================================ -->
+  <footer data-section="footer" class="footer-section">
+    <div class="footer-disclaimer">
+      <strong>Important Disclosure:</strong> U.S. Home Solutions, LLC is a real estate investor. We purchase properties and may assign our purchase contract to another buyer for a fee. We are not a real estate agent or broker. This is not legal or financial advice. Please consult with a qualified attorney or financial advisor regarding your specific situation.
+    </div>
+    <div class="footer-copyright">
+      © 2026 U.S. Home Solutions, LLC — Texas
+    </div>
+  </footer>
+
+  <script>
+    // ===== FORM SUBMISSION HANDLER =====
+    // Function: handleFormSubmit(event)
+    // Purpose: Collect form data, submit via fetch to webhook, show success/error states
+    // Triggers: Form submit button click
+    // Webhook: Uses window.__formWebhookUrl or falls back to current URL + '/submit'
+    
+    const leadForm = document.getElementById('lead-form');
+    const formSubmitBtn = document.getElementById('form-submit-btn');
+    const formError = document.getElementById('form-error');
+    const formSuccess = document.getElementById('form-success');
+
+    leadForm.addEventListener('submit', async function(e) {
+      e.preventDefault();
+
+      // Clear previous error/success states
+      formError.classList.remove('show');
+      formSuccess.classList.remove('show');
+
+      // Show loading state
+      formSubmitBtn.disabled = true;
+      formSubmitBtn.classList.add('loading');
+      const originalText = formSubmitBtn.textContent;
+      formSubmitBtn.textContent = 'Sending...';
+
+      // Collect form data
+      const formData = new FormData(leadForm);
+      const firstName = formData.get('first_name');
+      const phone = formData.get('phone');
+      const city = formData.get('city');
+      const situation = formData.get('situation');
+
+      // Determine webhook URL
+      const webhookUrl = window.__formWebhookUrl || 
+        (window.location.origin + window.location.pathname.replace(/\/$/, '') + '/submit');
+
+      try {
+        // Submit form data as JSON
+        const response = await fetch(webhookUrl, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            contactName: firstName,
+            contactPhone: phone,
+            contactEmail: '', // Not required for this form
+            data: {
+              city: city,
+              situation: situation
+            }
+          })
+        });
+
+        if (!response.ok) {
+          throw new Error('Form submission failed');
+        }
+
+        const result = await response.json();
+
+        // Show success state
+        leadForm.style.display = 'none';
+        formSuccess.classList.add('show');
+
+      } catch (error) {
+        // Show error state
+        formError.textContent = 'There was an issue submitting your form. Please try again or call us directly.';
+        formError.classList.add('show');
+
+        // Reset button
+        formSubmitBtn.disabled = false;
+        formSubmitBtn.classList.remove('loading');
+        formSubmitBtn.textContent = originalText;
+      }
+    });
+
+    // ===== SMOOTH SCROLL ENHANCEMENT =====
+    // Function: Enhance anchor link scrolling behavior
+    // Purpose: Smooth scroll to form section when hero CTA is clicked
+    // Behavior: Already handled by scroll-behavior: smooth in CSS, but ensure focus management
+    
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if (href !== '#' && document.querySelector(href)) {
+          e.preventDefault();
+          const target = document.querySelector(href);
+          target.scrollIntoView({ behavior: 'smooth' });
+          // Move focus to target for accessibility
+          target.focus();
+        }
+      });
+    });
+
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
