@@ -377,6 +377,53 @@
       display: block;
     }
 
+    /* ===== QUALIFYING SECTION STYLES ===== */
+    /* Initial qualifying questions shown before main form */
+    /* Hidden when user selects disqualifying answer */
+    
+    .qualifying-section {
+      display: block;
+    }
+
+    .qualifying-section.hidden {
+      display: none;
+    }
+
+    .disqualify-message {
+      display: none;
+      text-align: center;
+      padding: 40px 24px;
+      background: rgba(196, 160, 80, 0.1);
+      border: 1px solid var(--accent-orange);
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+
+    .disqualify-message.show {
+      display: block;
+    }
+
+    .disqualify-message h3 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--accent-orange);
+      margin-bottom: 12px;
+    }
+
+    .disqualify-message p {
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .main-form-fields {
+      display: none;
+    }
+
+    .main-form-fields.visible {
+      display: block;
+    }
+
     /* ===== FOOTER SECTION STYLES ===== */
     /* Legal disclaimer and copyright information */
     
