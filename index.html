@@ -317,6 +317,36 @@
     var params = new URLSearchParams(window.location.search);
     var refSource = params.get('ref') || 'direct';
 
+    function detectDevice(ua) {
+      if (/iPad/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1)) return 'Tablet';
+      if (/Tablet|PlayBook|Nexus 7|Nexus 10/.test(ua)) return 'Tablet';
+      if (/Mobi|iPhone|iPod|Android.*Mobile/.test(ua)) return 'Mobile';
+      return 'Desktop';
+    }
+
+    function detectOS(ua) {
+      if (/iPhone|iPad|iPod/.test(ua)) return 'iOS';
+      if (/Android/.test(ua)) return 'Android';
+      if (/Mac OS X/.test(ua)) return 'macOS';
+      if (/Windows/.test(ua)) return 'Windows';
+      if (/Linux/.test(ua)) return 'Linux';
+      return 'Unknown';
+    }
+
+    function detectBrowser(ua) {
+      if (/Edg\//.test(ua)) return 'Edge';
+      if (/OPR\//.test(ua)) return 'Opera';
+      if (/Chrome\//.test(ua) && !/Chromium/.test(ua)) return 'Chrome';
+      if (/Firefox\//.test(ua)) return 'Firefox';
+      if (/Safari\//.test(ua) && !/Chrome\//.test(ua)) return 'Safari';
+      return 'Unknown';
+    }
+
+    var ua = navigator.userAgent;
+    var deviceType = detectDevice(ua);
+    var osName = detectOS(ua);
+    var browserName = detectBrowser(ua);
+
     fetch('https://paymegpt.com/api/webhooks/flow/y55sruxy/cc1c8cda42db466999e1e9c5ba9f3af07a621e53f1611bf026c05d94d66bc1b7', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -326,7 +356,10 @@
           session_id: sessionId,
           page: window.location.pathname,
           ref_source: refSource,
-          is_new_session: isNew ? 'true' : 'false'
+          is_new_session: isNew ? 'true' : 'false',
+          device_type: deviceType,
+          browser: browserName,
+          os_name: osName
         }
       })
     }).catch(function() {});
