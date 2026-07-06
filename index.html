@@ -304,6 +304,34 @@
 </script>  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<script>
+  (function() {
+    var STORAGE_KEY = 'ush_session_id';
+    var existing = null;
+    try { existing = localStorage.getItem(STORAGE_KEY); } catch (e) {}
+    var isNew = !existing;
+    var sessionId = existing || ('sess_' + Date.now() + '_' + Math.random().toString(36).slice(2, 11));
+    try { localStorage.setItem(STORAGE_KEY, sessionId); } catch (e) {}
+    window.ushSessionId = sessionId;
+
+    var params = new URLSearchParams(window.location.search);
+    var refSource = params.get('ref') || 'direct';
+
+    fetch('https://paymegpt.com/api/webhooks/flow/y55sruxy/cc1c8cda42db466999e1e9c5ba9f3af07a621e53f1611bf026c05d94d66bc1b7', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        data: {
+          visit_timestamp: new Date().toISOString(),
+          session_id: sessionId,
+          page: window.location.pathname,
+          ref_source: refSource,
+          is_new_session: isNew ? 'true' : 'false'
+        }
+      })
+    }).catch(function() {});
+  })();
+</script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
 
@@ -412,41 +440,13 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>Closing timeline</td>
-              <td><strong style="color:var(--accent)">Weeks, not months</strong></td>
-              <td>60–90+ days</td>
-            </tr>
-            <tr>
-              <td>Repairs required</td>
-              <td><span class="icon-yes">✔</span> None — sell as-is</td>
-              <td><span class="icon-no">✖</span> Usually required</td>
-            </tr>
-            <tr>
-              <td>Agent commission</td>
-              <td><span class="icon-yes">✔</span> $0</td>
-              <td><span class="icon-no">✖</span> 5–6% of sale price</td>
-            </tr>
-            <tr>
-              <td>Closing costs</td>
-              <td><span class="icon-yes">✔</span> We cover them</td>
-              <td><span class="icon-no">✖</span> Paid by seller</td>
-            </tr>
-            <tr>
-              <td>Showings &amp; open houses</td>
-              <td><span class="icon-yes">✔</span> None</td>
-              <td><span class="icon-no">✖</span> Yes — ongoing</td>
-            </tr>
-            <tr>
-              <td>Deal falls through risk</td>
-              <td><span class="icon-yes">✔</span> No financing contingency</td>
-              <td><span class="icon-no">✖</span> 15–20% fall-through rate</td>
-            </tr>
-            <tr>
-              <td>Certainty of close</td>
-              <td><span class="icon-yes">✔</span> Guaranteed</td>
-              <td><span class="icon-no">✖</span> Not guaranteed</td>
-            </tr>
+            <tr><td>Closing timeline</td><td><strong style="color:var(--accent)">Weeks, not months</strong></td><td>60–90+ days</td></tr>
+            <tr><td>Repairs required</td><td><span class="icon-yes">✔</span> None — sell as-is</td><td><span class="icon-no">✖</span> Usually required</td></tr>
+            <tr><td>Agent commission</td><td><span class="icon-yes">✔</span> $0</td><td><span class="icon-no">✖</span> 5–6% of sale price</td></tr>
+            <tr><td>Closing costs</td><td><span class="icon-yes">✔</span> We cover them</td><td><span class="icon-no">✖</span> Paid by seller</td></tr>
+            <tr><td>Showings &amp; open houses</td><td><span class="icon-yes">✔</span> None</td><td><span class="icon-no">✖</span> Yes — ongoing</td></tr>
+            <tr><td>Deal falls through risk</td><td><span class="icon-yes">✔</span> No financing contingency</td><td><span class="icon-no">✖</span> 15–20% fall-through rate</td></tr>
+            <tr><td>Certainty of close</td><td><span class="icon-yes">✔</span> Guaranteed</td><td><span class="icon-no">✖</span> Not guaranteed</td></tr>
           </tbody>
         </table>
       </div>
@@ -713,7 +713,7 @@
         const response = await fetch('https://paymegpt.com/api/public/forms/6b0fewjw/submit', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ first_name: firstName, phone, city, situation, timeline, owner_status: ownerStatus, tags })
+          body: JSON.stringify({ first_name: firstName, phone, city, situation, timeline, owner_status: ownerStatus, tags, session_id: window.ushSessionId || '' })
         });
 
         if (!response.ok) throw new Error('Failed: ' + response.status);
@@ -721,7 +721,7 @@
         fetch('https://paymegpt.com/api/webhooks/flow/gas915pt/ae7896fe3979e9ae7fdd4d38d4bb082f89df2c0ba07b7920fbcad9e118d5a940', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ contactName: firstName, contactPhone: phone, data: { city, situation, timeline, owner_status: ownerStatus } })
+          body: JSON.stringify({ contactName: firstName, contactPhone: phone, data: { city, situation, timeline, owner_status: ownerStatus, session_id: window.ushSessionId || '' } })
         }).catch(() => {});
 
         leadForm.style.display = 'none';
