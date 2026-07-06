@@ -351,6 +351,8 @@
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
+        contactEmail: 'anonymous-visitor@ush-tracking.internal',
+        contactName: 'Anonymous Visitor',
         data: {
           visit_timestamp: new Date().toISOString(),
           session_id: sessionId,
