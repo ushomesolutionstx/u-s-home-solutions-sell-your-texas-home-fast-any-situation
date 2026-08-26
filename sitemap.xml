@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://fasthomesaletx.com/</loc>
+    <lastmod>2026-08-26T13:16:11.871Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://fasthomesaletx.com/blog/</loc>
+    <lastmod>2026-08-26T13:16:02.860Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://fasthomesaletx.com/blog/options-after-the-first-missed-payment-20260826/</loc>
     <lastmod>2026-08-26T13:15:26.741Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -23,16 +33,6 @@
   <url>
     <loc>https://fasthomesaletx.com/blog/how-a-cash-offer-is-calculated-20260824/</loc>
     <lastmod>2026-08-24T13:16:40.754Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://fasthomesaletx.com/blog/</loc>
-    <lastmod>2026-08-24T13:16:36.436Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://fasthomesaletx.com/</loc>
-    <lastmod>2026-08-24T13:16:31.669Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
