@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://fasthomesaletx.com/</loc>
+    <lastmod>2026-09-05T21:45:56.921Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://fasthomesaletx.com/san-antonio-tx/</loc>
-    <lastmod>2026-09-04T13:13:39.271Z</lastmod>
+    <lastmod>2026-09-05T21:25:48.646Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://fasthomesaletx.com/blog/missed-mortgage-payment-texas/</loc>
+    <lastmod>2026-09-05T21:25:48.633Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
@@ -31,11 +41,6 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://fasthomesaletx.com/blog/missed-mortgage-payment-texas/</loc>
-    <lastmod>2026-09-04T13:13:08.307Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
     <loc>https://fasthomesaletx.com/blog/loan-modification-basics-20260902/</loc>
     <lastmod>2026-09-04T13:13:03.443Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -48,11 +53,6 @@
   <url>
     <loc>https://fasthomesaletx.com/blog/</loc>
     <lastmod>2026-09-04T13:12:53.595Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://fasthomesaletx.com/</loc>
-    <lastmod>2026-09-04T13:12:48.776Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
