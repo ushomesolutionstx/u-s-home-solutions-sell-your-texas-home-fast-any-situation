@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://fasthomesaletx.com/</loc>
+    <lastmod>2026-09-05T23:44:30.665Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://fasthomesaletx.com/blog/missed-mortgage-payment-texas/</loc>
     <lastmod>2026-09-05T23:20:13.410Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -48,11 +53,6 @@
   <url>
     <loc>https://fasthomesaletx.com/houston-tx/</loc>
     <lastmod>2026-09-05T22:59:24.060Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://fasthomesaletx.com/</loc>
-    <lastmod>2026-09-05T22:39:33.819Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
