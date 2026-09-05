@@ -500,14 +500,14 @@
   <h2 class="section-title">We Work With Homeowners in All Kinds of Situations</h2>
   <p class="options-subtext">You don't have to be in crisis to work with us. We help homeowners who simply want a faster, simpler way to sell — no listings, no showings, no waiting.</p>
   <div class="options-grid situations">
-    <div class="option-card"><h3>Facing foreclosure or missed mortgage payments</h3></div>
-    <div class="option-card"><h3>Going through divorce or probate</h3></div>
-    <div class="option-card"><h3>Inherited a property you don't want to keep</h3></div>
-    <div class="option-card"><h3>Relocating and need to sell on a tight timeline</h3></div>
-    <div class="option-card"><h3>Behind on property taxes or dealing with liens</h3></div>
-    <div class="option-card"><h3>Property needs major repairs you can't or don't want to handle</h3></div>
-    <div class="option-card"><h3>Want to skip the realtor and sell directly for cash</h3></div>
-    <div class="option-card"><h3>Just need a clean exit — fast</h3></div>
+    <div class="option-card" data-n="1"><h3>Facing foreclosure or missed mortgage payments</h3></div>
+    <div class="option-card" data-n="2"><h3>Going through divorce or probate</h3></div>
+    <div class="option-card" data-n="3"><h3>Inherited a property you don't want to keep</h3></div>
+    <div class="option-card" data-n="4"><h3>Relocating and need to sell on a tight timeline</h3></div>
+    <div class="option-card" data-n="5"><h3>Behind on property taxes or dealing with liens</h3></div>
+    <div class="option-card" data-n="6"><h3>Property needs major repairs you can't or don't want to handle</h3></div>
+    <div class="option-card" data-n="7"><h3>Want to skip the realtor and sell directly for cash</h3></div>
+    <div class="option-card" data-n="8"><h3>Just need a clean exit — fast</h3></div>
   </div>
   <div style="margin-top:44px;">
     <p style="font-size:15px;color:var(--text-dim);max-width:640px;margin-bottom:28px;">Whatever your situation, the first step is a free, no-pressure conversation. We'll listen, walk you through your options, and give you a straight answer.</p>
@@ -521,23 +521,28 @@
     <div class="section-label">Side-by-Side</div>
     <h2 class="section-title">Cash Offer vs. Listing with an Agent</h2>
     <p class="section-sub" style="margin-bottom:32px;">See how a direct sale stacks up — honestly.</p>
-    <div class="compare-table-wrap">
-      <table class="compare-table">
-        <thead>
-          <tr><th></th><th class="us-col">U.S. Home Solutions</th><th>Traditional Agent</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Closing timeline</td><td style="color:var(--mustard);font-weight:900;">Weeks, not months</td><td>60–90+ days</td></tr>
-          <tr><td>Repairs required</td><td><span class="icon-yes">✔</span> None — sell as-is</td><td><span class="icon-no">✖</span> Usually required</td></tr>
-          <tr><td>Agent commission</td><td><span class="icon-yes">✔</span> $0</td><td><span class="icon-no">✖</span> 5–6% of sale price</td></tr>
-          <tr><td>Closing costs</td><td><span class="icon-yes">✔</span> We cover them</td><td><span class="icon-no">✖</span> Paid by seller</td></tr>
-          <tr><td>Showings &amp; open houses</td><td><span class="icon-yes">✔</span> None</td><td><span class="icon-no">✖</span> Yes — ongoing</td></tr>
-          <tr><td>Deal falls through risk</td><td><span class="icon-yes">✔</span> No financing contingency</td><td><span class="icon-no">✖</span> 15–20% fall-through rate</td></tr>
-          <tr><td>Certainty of close</td><td><span class="icon-yes">✔</span> Guaranteed</td><td><span class="icon-no">✖</span> Not guaranteed</td></tr>
-        </tbody>
-      </table>
+    <div class="ledger-wrap">
+      <div class="ledger-rail">
+        <div class="ledger-rail-note">The honest version: a cash offer runs below market value. Everything on the right is what you trade for speed and certainty.</div>
+      </div>
+      <div class="ledger-table-wrap">
+        <table class="ledger">
+          <thead>
+            <tr><th class="us">Us</th><th class="them">Traditional Agent</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="us-val">Weeks, not months</td><td class="them-val">60–90+ days to close</td></tr>
+            <tr><td class="us-val">$0 in repairs — sell as-is</td><td class="them-val">Repairs usually required</td></tr>
+            <tr><td class="us-val">$0 agent commission</td><td class="them-val">5–6% of sale price</td></tr>
+            <tr><td class="us-val">We cover closing costs</td><td class="them-val">Paid by seller</td></tr>
+            <tr><td class="us-val">No showings, ever</td><td class="them-val">Ongoing showings &amp; open houses</td></tr>
+            <tr><td class="us-val">No financing contingency</td><td class="them-val">15–20% of deals fall through</td></tr>
+            <tr><td class="us-val">Guaranteed close</td><td class="them-val">Not guaranteed</td></tr>
+          </tbody>
+        </table>
+      </div>
     </div>
-    <p style="text-align:center;margin-top:20px;font-size:12px;color:#888;">A cash offer may be below market value. We'll be upfront if listing with an agent nets you more — and we'll tell you either way.</p>
+    <p style="text-align:center;margin-top:24px;font-size:12px;color:#888;">A cash offer may be below market value. We'll be upfront if listing with an agent nets you more — and we'll tell you either way.</p>
   </div>
 </section>
 
@@ -579,24 +584,39 @@
   <h2 class="section-title">Straight Answers</h2>
   <div class="faq-list">
     <div class="faq-item">
-      <button class="faq-question">Will the offer be way below what my home is worth?<span class="faq-chevron">▾</span></button>
-      <div class="faq-answer">A cash offer is typically below retail market value — because we're buying as-is, paying closing costs, and closing fast. We'll always be transparent about our number and how we got there. If listing with an agent would net you more after repairs and commissions, we'll tell you that honestly.</div>
+      <div class="faq-num">01</div>
+      <div class="faq-body">
+        <button class="faq-question">Will the offer be way below what my home is worth?<span class="faq-chevron">▾</span></button>
+        <div class="faq-answer">A cash offer is typically below retail market value — because we're buying as-is, paying closing costs, and closing fast. We'll always be transparent about our number and how we got there. If listing with an agent would net you more after repairs and commissions, we'll tell you that honestly.</div>
+      </div>
     </div>
     <div class="faq-item">
-      <button class="faq-question">What if I owe more than the home is worth?<span class="faq-chevron">▾</span></button>
-      <div class="faq-answer">We can still help. We work with sellers who are underwater on their mortgage. Depending on your situation, options may include a short sale negotiation with your lender or other solutions. The first step is a conversation — we'll map out what's possible.</div>
+      <div class="faq-num">02</div>
+      <div class="faq-body">
+        <button class="faq-question">What if I owe more than the home is worth?<span class="faq-chevron">▾</span></button>
+        <div class="faq-answer">We can still help. We work with sellers who are underwater on their mortgage. Depending on your situation, options may include a short sale negotiation with your lender or other solutions. The first step is a conversation — we'll map out what's possible.</div>
+      </div>
     </div>
     <div class="faq-item">
-      <button class="faq-question">Do I have to sign anything just to get a number?<span class="faq-chevron">▾</span></button>
-      <div class="faq-answer">No. You can get a cash offer with zero commitment. We'll talk, look at the property details, and give you a number. If you like it, we move forward. If not, you walk away — no pressure, no paperwork, no obligation.</div>
+      <div class="faq-num">03</div>
+      <div class="faq-body">
+        <button class="faq-question">Do I have to sign anything just to get a number?<span class="faq-chevron">▾</span></button>
+        <div class="faq-answer">No. You can get a cash offer with zero commitment. We'll talk, look at the property details, and give you a number. If you like it, we move forward. If not, you walk away — no pressure, no paperwork, no obligation.</div>
+      </div>
     </div>
     <div class="faq-item">
-      <button class="faq-question">How fast can you really close?<span class="faq-chevron">▾</span></button>
-      <div class="faq-answer">Faster than a traditional sale — because we use cash, there's no lender, no appraisal, and no financing approval to wait on. The timeline depends on your situation and when you're ready. We work around your schedule, not ours.</div>
+      <div class="faq-num">04</div>
+      <div class="faq-body">
+        <button class="faq-question">How fast can you really close?<span class="faq-chevron">▾</span></button>
+        <div class="faq-answer">Faster than a traditional sale — because we use cash, there's no lender, no appraisal, and no financing approval to wait on. The timeline depends on your situation and when you're ready. We work around your schedule, not ours.</div>
+      </div>
     </div>
     <div class="faq-item">
-      <button class="faq-question">Do I need to clean out the house or make repairs?<span class="faq-chevron">▾</span></button>
-      <div class="faq-answer">No repairs, no cleaning, no staging. We buy homes exactly as they sit. Leave what you don't want — we'll handle the rest.</div>
+      <div class="faq-num">05</div>
+      <div class="faq-body">
+        <button class="faq-question">Do I need to clean out the house or make repairs?<span class="faq-chevron">▾</span></button>
+        <div class="faq-answer">No repairs, no cleaning, no staging. We buy homes exactly as they sit. Leave what you don't want — we'll handle the rest.</div>
+      </div>
     </div>
   </div>
 </section>
