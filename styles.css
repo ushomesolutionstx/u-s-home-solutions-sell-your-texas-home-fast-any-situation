@@ -49,10 +49,26 @@
   .hero-section { position: relative; padding: 90px 28px 100px; text-align: left; max-width: 900px; margin: 0 auto; }
   .hero-eyebrow { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-dim); margin-bottom: 20px; max-width: 320px; }
   .hero-section h1 { font-family: 'Archivo', sans-serif; font-weight: 900; text-transform: uppercase; font-size: 42px; line-height: 0.95; margin-bottom: 22px; max-width: 620px; }
+  .hero-section h1 .h1-top, .hero-section h1 .h1-bleed { display: block; }
+  .hero-section h1 .h1-bleed { color: var(--mustard); margin-top: 8px; }
   @media (min-width: 768px) { .hero-section h1 { font-size: 68px; } }
   .hero-subheadline { font-size: 17px; color: var(--text-dim); max-width: 480px; margin-bottom: 14px; }
   .hero-phone-link { display: block; font-size: 15px; font-weight: 500; color: var(--mustard); margin-bottom: 32px; }
   .hero-phone-link:hover { color: var(--cyan); }
+
+  @media (min-width: 1024px) {
+    .hero-section { max-width: none; margin: 0; min-height: 800px; padding: 0; }
+    .hero-eyebrow { position: absolute; top: 120px; left: 40px; max-width: 220px; margin: 0; }
+    .hero-section h1 {
+      position: absolute; right: -10px; bottom: 230px; left: auto;
+      max-width: 900px; text-align: right; margin: 0;
+    }
+    .hero-section h1 .h1-top { display: block; font-size: 32px; font-weight: 500; color: var(--paper); margin-bottom: 12px; }
+    .hero-section h1 .h1-bleed { display: block; font-size: 118px; line-height: 0.85; }
+    .hero-subheadline { position: absolute; right: 40px; bottom: 150px; max-width: 420px; text-align: right; margin: 0; }
+    .hero-phone-link { position: absolute; left: 40px; bottom: 104px; margin: 0; }
+    .hero-section .btn { position: absolute; left: 40px; bottom: 44px; width: auto; }
+  }
 
   .section-label { font-size: 11px; font-weight: 900; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mustard); margin-bottom: 12px; }
   .section-title { font-family: 'Archivo', sans-serif; font-weight: 900; text-transform: uppercase; font-size: 28px; line-height: 1.05; margin-bottom: 16px; }
@@ -85,6 +101,18 @@
   .hiw-step p { font-size: 14px; color: var(--text-dim); margin-bottom: 10px; max-width: 260px; }
   .hiw-time { font-size: 11px; font-weight: 900; color: var(--cyan); letter-spacing: 0.06em; text-transform: uppercase; }
   .hiw-step.n1 .hiw-time { color: var(--mustard); }
+
+  @media (min-width: 1024px) {
+    .hiw-section { position: relative; padding: 100px 40px 60px; }
+    .hiw-grid { display: block; position: relative; height: 500px; max-width: none; }
+    .hiw-step { position: absolute; margin-top: 0 !important; flex: none; }
+    .hiw-step.n1 { left: 0; top: 150px; max-width: 280px; }
+    .hiw-step.n1 .hiw-number { font-size: 200px; }
+    .hiw-step.n2 { right: 0; top: 0; max-width: 260px; text-align: right; }
+    .hiw-step.n2 .hiw-number { font-size: 36px; }
+    .hiw-step.n3 { right: 70px; top: 300px; max-width: 260px; text-align: right; }
+    .hiw-step.n3 .hiw-number { font-size: 36px; }
+  }
 
   .options-section { padding: 88px 28px; max-width: 1040px; margin: 0 auto; }
   .options-subtext { font-size: 15px; color: var(--text-dim); max-width: 640px; margin-bottom: 40px; }
