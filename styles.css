@@ -257,7 +257,7 @@
   .faq-item:last-child { border-bottom: none; }
   .faq-num { display: block; font-size: 32px; font-weight: 900; color: rgba(217,194,106,0.35); line-height: 1; padding: 20px 0 0 2px; width: 42px; flex-shrink: 0; }
   .faq-item:nth-child(even) { margin-left: 16%; }
-  .faq-item:first-child .faq-num { font-size: 46px; color: var(--mustard); }
+  .faq-item:first-child .faq-num { font-size: 46px; color: var(--mustard); width: 62px; }
   .faq-item:first-child .faq-question { font-size: 17px; font-weight: 900; text-transform: uppercase; }
   .faq-body { flex: 1; min-width: 0; }
   .faq-question { width: 100%; background: none; border: none; padding: 20px 24px 20px 0; display: flex; justify-content: space-between; align-items: center; gap: 16px; cursor: pointer; color: var(--paper); font-size: 15px; font-weight: 500; text-align: left; font-family: 'Archivo', sans-serif; }
