@@ -843,6 +843,12 @@
       formSuccess.classList.add('show');
       formSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
 
+      if (window.posthog) {
+        posthog.capture('conversion_completed', {
+          situation, timeline, condition, city, owner_status: ownerStatus, page: 'houston-tx'
+        });
+      }
+
     } catch (error) {
       formError.textContent = 'There was an issue submitting your form. Please try again or call us directly.';
       formError.classList.add('show');
