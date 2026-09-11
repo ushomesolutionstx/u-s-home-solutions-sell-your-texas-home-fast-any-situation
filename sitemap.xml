@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://fasthomesaletx.com/blog/</loc>
+    <lastmod>2026-09-11T19:22:49.291Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://fasthomesaletx.com/</loc>
     <lastmod>2026-09-11T19:22:43.873Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -58,11 +63,6 @@
   <url>
     <loc>https://fasthomesaletx.com/blog/forbearance-explained-20260909/</loc>
     <lastmod>2026-09-11T19:21:47.292Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://fasthomesaletx.com/blog/</loc>
-    <lastmod>2026-09-11T19:21:42.854Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
