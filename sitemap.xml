@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://fasthomesaletx.com/blog/inherited-property-and-property-taxes-20260918/</loc>
-    <lastmod>2026-09-18T13:11:09.486Z</lastmod>
+    <loc>https://fasthomesaletx.com/</loc>
+    <lastmod>2026-09-18T13:12:19.017Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://fasthomesaletx.com/</loc>
-    <lastmod>2026-09-16T14:02:21.921Z</lastmod>
+    <loc>https://fasthomesaletx.com/blog/</loc>
+    <lastmod>2026-09-18T13:12:12.021Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://fasthomesaletx.com/blog/inherited-property-and-property-taxes-20260918/</loc>
+    <lastmod>2026-09-18T13:11:09.486Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
@@ -73,11 +78,6 @@
   <url>
     <loc>https://fasthomesaletx.com/blog/forbearance-explained-20260909/</loc>
     <lastmod>2026-09-16T13:11:02.491Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://fasthomesaletx.com/blog/</loc>
-    <lastmod>2026-09-16T13:10:52.267Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
