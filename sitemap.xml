@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://fasthomesaletx.com/san-antonio-tx/</loc>
+    <lastmod>2026-10-05T13:23:38.081Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://fasthomesaletx.com/houston-tx/</loc>
     <lastmod>2026-10-05T13:23:32.556Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -108,11 +113,6 @@
   <url>
     <loc>https://fasthomesaletx.com/</loc>
     <lastmod>2026-10-05T13:21:30.465Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://fasthomesaletx.com/san-antonio-tx/</loc>
-    <lastmod>2026-10-02T13:23:54.749Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
