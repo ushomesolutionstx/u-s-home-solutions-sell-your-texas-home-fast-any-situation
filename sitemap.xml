@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://fasthomesaletx.com/</loc>
+    <lastmod>2026-10-05T13:21:30.465Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://fasthomesaletx.com/blog/</loc>
+    <lastmod>2026-10-05T13:21:22.761Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://fasthomesaletx.com/blog/closing-costs-on-a-cash-sale-vs-traditional-20261005/</loc>
     <lastmod>2026-10-05T13:19:58.062Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -103,16 +113,6 @@
   <url>
     <loc>https://fasthomesaletx.com/blog/closing-costs-on-a-cash-sale-vs-traditional-20260928/</loc>
     <lastmod>2026-10-02T13:22:05.555Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://fasthomesaletx.com/blog/</loc>
-    <lastmod>2026-10-02T13:21:59.111Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://fasthomesaletx.com/</loc>
-    <lastmod>2026-10-02T13:21:53.265Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
