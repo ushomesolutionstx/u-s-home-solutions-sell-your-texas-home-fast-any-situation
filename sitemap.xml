@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://fasthomesaletx.com/san-antonio-tx/</loc>
-    <lastmod>2026-10-14T13:23:27.572Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
     <loc>https://fasthomesaletx.com/blog/how-mortgage-servicers-handle-defaults-20261007/</loc>
     <lastmod>2026-10-14T13:23:26.562Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -88,6 +83,11 @@
   <url>
     <loc>https://fasthomesaletx.com/</loc>
     <lastmod>2026-10-14T13:21:11.040Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://fasthomesaletx.com/san-antonio-tx/</loc>
+    <lastmod>2026-10-09T13:25:13.933Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
