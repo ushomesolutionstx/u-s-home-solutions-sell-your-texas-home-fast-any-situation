@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://fasthomesaletx.com/houston-tx/</loc>
+    <lastmod>2026-10-16T13:29:56.186Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://fasthomesaletx.com/blog/what-happens-if-you-do-nothing-with-an-inherited-home-20261009/</loc>
     <lastmod>2026-10-16T13:29:50.319Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -128,11 +133,6 @@
   <url>
     <loc>https://fasthomesaletx.com/san-antonio-tx/</loc>
     <lastmod>2026-10-14T13:25:11.982Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://fasthomesaletx.com/houston-tx/</loc>
-    <lastmod>2026-10-14T13:25:04.005Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
