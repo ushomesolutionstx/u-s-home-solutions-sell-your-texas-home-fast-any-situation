@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://fasthomesaletx.com/</loc>
+    <lastmod>2026-10-28T13:14:10.529Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://fasthomesaletx.com/blog/</loc>
+    <lastmod>2026-10-28T13:14:00.943Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://fasthomesaletx.com/blog/forbearance-explained-20261028/</loc>
     <lastmod>2026-10-28T13:12:55.309Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -148,16 +158,6 @@
   <url>
     <loc>https://fasthomesaletx.com/blog/closing-costs-on-a-cash-sale-vs-traditional-20260928/</loc>
     <lastmod>2026-10-26T13:24:53.641Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://fasthomesaletx.com/blog/</loc>
-    <lastmod>2026-10-26T13:24:47.386Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://fasthomesaletx.com/</loc>
-    <lastmod>2026-10-26T13:24:41.547Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
