@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://fasthomesaletx.com/houston-tx/</loc>
+    <lastmod>2026-11-13T15:50:08.509Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://fasthomesaletx.com/blog/what-happens-when-heirs-disagree-20261030/</loc>
     <lastmod>2026-11-13T15:50:01.231Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -188,11 +193,6 @@
   <url>
     <loc>https://fasthomesaletx.com/san-antonio-tx/</loc>
     <lastmod>2026-11-11T14:17:17.322Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://fasthomesaletx.com/houston-tx/</loc>
-    <lastmod>2026-11-11T14:17:10.260Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
